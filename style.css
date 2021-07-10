@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    line-height: 1.7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    padding-bottom: 20px;
+    line-height: 1.2em;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+.logo {
+    background-image: url(/images/logo.svg);
+    background-repeat: no-repeat;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
