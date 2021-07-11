@@ -1,35 +1,129 @@
+@import url(https://fonts.google.com/specimen/Overpass?preview.text_type=custom);
+@import url(https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom);
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html, body {
-    line-height: 1.7em;
+html,
+body {
+  line-height: 1.7em;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-h1, h2 {
-    padding-bottom: 20px;
-    line-height: 1.2em;
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+  line-height: 1.2em;
 }
 
 p {
-    margin: 10px 0;
+  margin: 10px 0px;
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
+}
+
+body {
+  font-family: Overpass;
+}
+
+.nav-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(./images/bg-pattern-intro.svg), -webkit-gradient(linear, left top, left bottom, from(#ff3d54));
+  background-image: url(./images/bg-pattern-intro.svg), linear-gradient(#ff3d54);
+  background-size: 350%, 100%;
+  background-position: 42% 35%, 0% 0%;
+  padding-top: 50px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .logo {
-    background-image: url(/images/logo.svg);
-    background-repeat: no-repeat;
-    background-color: blue;
-    margin-bottom: 20px;
+  color: white;
+  width: 22%;
+  padding-left: 20px;
+  display: block;
 }
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+.icon-ham {
+  width: 15%;
+  padding-right: 20px;
+  padding-top: 0px;
+}
+
+h1,
+h2 {
+  font-family: Ubuntu;
+}
+
+h2 {
+  color: white;
+}
+
+.hero-section {
+  margin: 0px 20px;
+  text-align: center;
+}
+
+.hero-section h2 {
+  margin-top: 80px;
+}
+
+.hero-section p {
+  margin-left: 35px;
+  margin-right: 35px;
+  color: white;
+}
+
+.hero-section a {
+  text-decoration: none;
+}
+
+.trial-button {
+  background-color: white;
+  font-family: Ubuntu;
+  color: #ff525d;
+  padding: 5px 5px;
+  border: 1px white solid;
+  margin-left: 0px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.more-button {
+  color: white;
+  padding: 5px 5px;
+  border: 1px white solid;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
