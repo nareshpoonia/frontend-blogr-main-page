@@ -6,13 +6,14 @@
 
 .nav-hero {
   display: flex;
-  height: 600px;
+  height: 400px;
   flex-direction: column;
   background-image: url(./images/bg-pattern-intro.svg),
     linear-gradient(hsl(353, 100%, 62%));
-  background-size: 350%, 100%;
-  background-position: 42% 35%, 0% 0%;
+  background-size: 400%, 100%;
+  background-position: 42% 30%, 0% 0%;
   padding-top: 50px;
+  margin-bottom: 10px;
 }
 
 .navbar {
@@ -87,4 +88,14 @@ h2 {
   padding: 5px 5px;
   border: 1px white solid;
   border-radius: 10px;
+}
+
+.introduction-section {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin-top: 10px;
+    color: black;
+    margin: auto;
+  }
 }

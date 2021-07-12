@@ -39,16 +39,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 600px;
+  height: 400px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: url(./images/bg-pattern-intro.svg), -webkit-gradient(linear, left top, left bottom, from(#ff3d54));
   background-image: url(./images/bg-pattern-intro.svg), linear-gradient(#ff3d54);
-  background-size: 350%, 100%;
-  background-position: 42% 35%, 0% 0%;
+  background-size: 400%, 100%;
+  background-position: 42% 30%, 0% 0%;
   padding-top: 50px;
+  margin-bottom: 10px;
 }
 
 .navbar {
@@ -125,5 +126,21 @@ h2 {
   padding: 5px 5px;
   border: 1px white solid;
   border-radius: 10px;
+}
+
+.introduction-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.introduction-section h2 {
+  margin-top: 10px;
+  color: black;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
