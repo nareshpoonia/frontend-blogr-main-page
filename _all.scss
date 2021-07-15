@@ -1,54 +1,62 @@
-// .wrapper {
-//   display: flex;
-// }
-
-@import url(https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom);
+.logo {
+  color: white;
+  // height: 10px;
+  // width: 25%;
+  // // width: 290px;
+  // width: 11.25rem;
+  // width: 23vw;
+  width: 70px;
+  width: 20%;
+  // padding-left: 45px;
+  // margin-right: 20px;
+  // padding-right: 20px;
+  // padding-bottom: 30px;
+  display: block;
+  // padding-top: 100px;
+}
 
 .nav-hero {
   display: flex;
-  height: 400px;
+  height: 75rem;
+  height: 80vh;
   flex-direction: column;
+  // align-items: flex-end;
   background-image: url(./images/bg-pattern-intro.svg),
     linear-gradient(hsl(353, 100%, 62%));
-  background-size: 400%, 100%;
-  background-position: 42% 30%, 0% 0%;
-  padding-top: 50px;
-  margin-bottom: 10px;
+  background-size: 440%, 100%;
+  background-position: 40% 42%, 0% 0%;
+  // padding-top: 100px;
+  // padding-right: 35px;
+  padding: 8vh 8vw 0vh 8vw;
+  // margin-bottom: 10px;
+  border-bottom-left-radius: 20vw;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  padding-bottom: 12vh;
   img {
     align-self: flex-start;
   }
 }
 
-.logo {
-  // background: url(/images/logo.svg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // display: block;
-  color: white;
-  // height: 10px;
-  width: 22%;
-  padding-left: 20px;
-  // margin-right: 20px;
-  // padding-right: 20px;
-  // padding-bottom: 30px;
-  display: block;
-}
-
 .icon-ham {
-  width: 15%;
-  padding-right: 20px;
+  // width: 10%;
+  // width: 3.75rem;
+  display: inline-block;
+  width: 9vw;
+  padding-right: 0px;
   padding-top: 0px;
+  position: relative;
+  top: 1vh;
 }
 
 h1,
 h2 {
-  font-family: Ubuntu;
+  font-family: Overpass;
 }
 
 h2 {
@@ -57,14 +65,22 @@ h2 {
 
 .hero-section {
   margin: 0px 20px;
+  // padding-top: 225px;
   text-align: center;
+  // justify-content: center;
+  // align-self: flex-end;
   h2 {
-    margin-top: 80px;
+    // font-size: 3.75rem;
+    font-size: 8.3vw;
+    padding-bottom: 1vh;
+    // padding-bottom: 50px;
   }
   p {
-    margin-left: 35px;
-    margin-right: 35px;
+    font-size: 4.7vw;
+    // padding-left: 120px;
+    // padding-right: 100px;
     color: white;
+    margin-bottom: 7vh;
   }
   a {
     text-decoration: none;
@@ -75,27 +91,103 @@ h2 {
   background-color: white;
   font-family: Ubuntu;
   color: $lightRed;
-  padding: 5px 5px;
+  padding: 1.7vh 5vw;
   border: 1px white solid;
-  margin-left: 0px;
+  margin: 0px 6vw 0px 5px;
   // padding-left: 0px;
-  border-radius: 10px;
+  border-radius: 10vw;
   position: relative;
 }
 
 .more-button {
   color: white;
-  padding: 5px 5px;
+  padding: 2vh 6vw 1.7vh 6vw;
   border: 1px white solid;
-  border-radius: 10px;
+  border-radius: 10vw;
 }
 
 .introduction-section {
   display: flex;
   flex-direction: column;
   h2 {
-    margin-top: 10px;
+    padding-top: 15vh;
     color: black;
     margin: auto;
   }
+}
+
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+// Making the checkbox hide with opacity
+.menu-wrap .toggler {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 2;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  z-index: 2;
+}
+// Outside wrapper of the hamburger
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  background: $veryLightRed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // transition: all 0.4 ease;
+}
+
+.icon-close {
+  display: none;
+}
+
+// When checked icon changes to X
+.menu-wrap .toggler:checked + .hamburger .icon-ham {
+  display: none;
+}
+.menu-wrap .toggler:checked + .hamburger .icon-close {
+  display: block;
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+// If checkbox isn't check, menu won't show
+.menu-wrap .menu {
+  position: fixed;
+  width: 80%;
+  top: 120px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.menu-wrap .menu > div {
+  background: white;
+  width: 200vw;
+  height: 75vh;
+  box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  padding: 1.2rem;
 }

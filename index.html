@@ -11,56 +11,88 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | [Blogr]</title>
   </head>
   <body>
     <div class="wrapper">
       <div class="nav-hero">
-      <nav class="navbar">
-        <h1 class="logo"><a href="#home"></a><img src="/images/logo.svg" alt=""> </h1>
-        <img class="icon-ham"src="/images/icon-hamburger.svg" alt="">
-        
-        <!-- <ul>
-          <li>
-            Product
-            <ul>
-              <li>Overview</li>
-              <li>Pricing</li>
-              <li>Marketplace</li>
-              <li>Features</li>
-              <li>Integrations</li>
-            </ul>
-          </li>
-          <li>
-            Company
-            <ul>
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Careers</li>
-            </ul>
-          </li>
-          <li>
-            Connect
-            <ul>
-              <li>Contact</li>
-              <li>Newsletter</li>
-              <li>LinkedIn</li>
-            </ul>
-          </li>
-        </ul>
-        <a class="Login" href="#">Login</a>
+        <nav class="navbar">
+          <h1 class="logo">
+            <a href="#home"></a><img src="/images/logo.svg" alt="" />
+          </h1>
+          <!-- <img class="icon-ham" src="/images/icon-hamburger.svg" alt="" /> -->
+          <div class="menu-wrap">
+            <input class="toggler" type="checkbox" />
+            <div class="hamburger">
+              <img class="icon-ham" src="/images/icon-hamburger.svg" alt="" />
+              <img class="icon-close" src="/images/icon-close.svg" alt="" />
+            </div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li>
+                      Product
+                      <ul>
+                        <li>Overview</li>
+                        <li>Pricing</li>
+                        <li>Marketplace</li>
+                        <li>Features</li>
+                        <li>Integrations</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Company
+                      <ul>
+                        <li>About</li>
+                        <li>Team</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Connect
+                      <ul>
+                        <li>Contact</li>
+                        <li>Newsletter</li>
+                        <li>LinkedIn</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- <a class="Login" href="#">Login</a>
         <a class="Sign-up" href="#">Sign-up</a> -->
-      </nav>
-      <section>
+              </div>
+            </div>
+          </div>
+        </nav>
+
         <div class="hero-section">
-          <h2>A modern <br> publishing platform</h2>
+          <h2>
+            A modern <br />
+            publishing platform
+          </h2>
           <p>Grow your audience and build your online brand</p>
+        </div>
+        <div class="buttons">
           <a class="trial-button" href="#">Start for Free</a>
           <a class="more-button" href="#">Learn More</a>
         </div>
-        </div>
+      </div>
+      <div>
         <div class="introduction-section">
           <h2>Designed for the future</h2>
           <img
@@ -114,50 +146,50 @@
             producing even the most complicated sites.
           </p>
         </div>
-      </section>
-    </div>
-    <footer>
-      <div class="bottom-navbar">
-        <h1 class="logo"><a href="#home"></a></h1>
-        <ul>
-          <li>
-            Product
-            <ul>
-              <li>Overview</li>
-              <li>Pricing</li>
-              <li>Marketplace</li>
-              <li>Features</li>
-              <li>Integrations</li>
-            </ul>
-          </li>
-          <li>
-            Company
-            <ul>
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Careers</li>
-            </ul>
-          </li>
-          <li>
-            Connect
-            <ul>
-              <li>Contact</li>
-              <li>Newsletter</li>
-              <li>LinkedIn</li>
-            </ul>
-          </li>
-        </ul>
-        <button>Login</button>
-        <button>Sign Up</button>
       </div>
-    </footer>
+      <footer>
+        <div class="bottom-navbar">
+          <h1 class="logo"><a href="#home"></a></h1>
+          <ul>
+            <li>
+              Product
+              <ul>
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </li>
+            <li>
+              Company
+              <ul>
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </li>
+            <li>
+              Connect
+              <ul>
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </li>
+          </ul>
+          <button>Login</button>
+          <button>Sign Up</button>
+        </div>
+      </footer>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https:///www.nareshpoonia.com">Naresh Poonia</a>.
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https:///www.nareshpoonia.com">Naresh Poonia</a>.
+      </div>
     </div>
   </body>
 </html>
