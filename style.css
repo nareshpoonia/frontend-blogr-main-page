@@ -239,4 +239,38 @@ h2 {
   list-style: none;
   padding: 1.2rem;
 }
+
+.icon-dark {
+  width: 15%;
+  margin-left: 10px;
+}
+
+nav {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  height: 100vh;
+}
+
+.first-collap {
+  list-style-type: none;
+}
+
+.submenu-button {
+  position: fixed;
+  top: 120px;
+  left: 220px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+#collap {
+  display: none;
+}
+
+#collap .active {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

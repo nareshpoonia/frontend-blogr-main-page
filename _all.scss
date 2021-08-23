@@ -44,8 +44,6 @@
 }
 
 .icon-ham {
-  // width: 10%;
-  // width: 3.75rem;
   display: inline-block;
   width: 9vw;
   padding-right: 0px;
@@ -190,4 +188,51 @@ h2 {
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   padding: 1.2rem;
+}
+
+.icon-dark {
+  width: 15%;
+  margin-left: 10px;
+}
+
+// .product-submenu .submenu-icons {
+//   display: block;
+//   position: absolute;
+//   top: 2px;
+//   right: 107px;
+//   z-index: 2;
+//   cursor: pointer;
+//   width: 30px;
+//   height: 18px;
+//   opacity: 0;
+//   z-index: 2;
+// }
+
+nav {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  height: 100vh;
+}
+
+.first-collap {
+  list-style-type: none;
+}
+
+.submenu-button {
+  position: fixed;
+  top: 120px;
+  left: 220px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+#collap {
+  display: none;
+}
+
+#collap .active {
+  display: block;
 }

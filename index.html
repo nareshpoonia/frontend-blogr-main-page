@@ -13,9 +13,14 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Awesome CDN  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,20 +46,41 @@
               <img class="icon-close" src="/images/icon-close.svg" alt="" />
             </div>
             <div class="menu">
-              <div>
-                <div>
+              <li class="first-collap">Product</li>
+              <button class="submenu-button">
+                <img src="/images/icon-arrow-dark.svg" alt="">
+              </button>
+              
+              <nav >
+                <ul id="collap">
+                <li ><a href="">Google</a></li>
+                <li ><a href="">YouTube</a></li>
+                <li ><a href="">Twitter</a></li>
+                </ul>
+              </nav>
+              <!-- <div> -->
+                <!-- <div>
                   <ul>
-                    <li>
-                      Product
-                      <ul>
-                        <li>Overview</li>
-                        <li>Pricing</li>
-                        <li>Marketplace</li>
-                        <li>Features</li>
-                        <li>Integrations</li>
-                      </ul>
-                    </li>
-                    <li>
+                    <div class="product-submenu">
+                      <input class="submenu-icons" type="button" />
+                      <nav>
+                      <li>
+                        Product
+                        <img
+                          class="icon-dark"
+                          src="/images/icon-arrow-dark.svg"
+                          alt=""
+                        />
+                        <ul class="product-sublist">
+                          <li>Overview</li>
+                          <li>Pricing</li>
+                          <li>Marketplace</li>
+                          <li>Features</li>
+                          <li>Integrations</li>
+                        </ul>
+                      </li>
+                    </div> -->
+                    <!-- <li>
                       Company
                       <ul>
                         <li>About</li>
@@ -72,7 +98,7 @@
                       </ul>
                     </li>
                   </ul>
-                </div>
+                </div> -->
                 <!-- <a class="Login" href="#">Login</a>
         <a class="Sign-up" href="#">Sign-up</a> -->
               </div>
@@ -191,5 +217,6 @@
         >. Coded by <a href="https:///www.nareshpoonia.com">Naresh Poonia</a>.
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
