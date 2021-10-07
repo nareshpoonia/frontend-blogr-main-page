@@ -9,6 +9,7 @@
   --light-red: hsl(353, 100%, 62%);
   --white: hsl(0, 0%, 100%);
   --very-dark-blue: hsl(208, 49%, 24%);
+  --very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
 
 body {
@@ -120,4 +121,40 @@ h3 {
 
 p {
   text-align: center;
+}
+
+.middle-section {
+  position: relative;
+}
+
+.mid-section-text {
+  position: relative;
+  top: 13rem;
+  background-image: url(/images/bg-pattern-circles.svg),
+    linear-gradient(var(--very-dark-blue), var(--very-dark-desaturated-blue));
+  background-position: 90% 100%;
+  background-size: 200%;
+  border-radius: 0rem 3rem 0rem 3rem;
+  height: 500px;
+}
+
+.mid-section-text h3 {
+  padding-top: 10rem;
+  text-align: center;
+  margin: 0rem 1.5rem;
+  color: var(--white);
+  font-size: 2rem;
+  line-height: 2.9rem;
+}
+
+.mid-section-text p {
+  padding-top: 1rem;
+  color: var(--white);
+}
+.phone-image {
+  position: absolute;
+  margin-top: 1rem;
+  z-index: 9;
+  width: 95%;
+  transform: scale(90%);
 }
