@@ -213,14 +213,14 @@ p {
 
 .close {
   position: fixed;
-  top: 52px;
-  right: 16px;
+  top: 50px;
+  right: 70px;
   display: none;
 }
 
 .hamburger-icon {
   position: fixed;
-  top: 52px;
-  right: 16px;
+  top: 50px;
+  right: 70px;
   display: block;
 }
