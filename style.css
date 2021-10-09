@@ -210,3 +210,14 @@ p {
   color: var(--greyish-blue);
   margin-bottom: 1rem;
 }
+
+.close {
+  position: fixed;
+  top: 52px;
+  right: 16px;
+  display: none;
+}
+
+.hamburger-icon {
+  display: block;
+}
