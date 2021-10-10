@@ -7,6 +7,7 @@ var collapsibleMenuCompany = document.querySelector(
 var collapsibleMenuConnect = document.querySelector(
   ".collapsible-menu-connect"
 );
+var line = document.querySelector(".line");
 var dropDown = document.querySelector(".drop-down");
 var arrowIconImageProduct = document.querySelector(".arrow-icon-image-product");
 var arrowIconImageCompany = document.querySelector(".arrow-icon-image-company");
@@ -43,11 +44,16 @@ function collapsibleToggleChangeProduct() {
   if (collapsibleToggleProduct === false) {
     arrowIconImageProduct.style.transform = "rotate(" + 180 + "deg)";
     collapsibleMenu.style.display = "flex";
+    arrowIconImageCompany.style.display = "none";
+    arrowIconImageConnect.style.display = "none";
+
     collapsibleToggleProduct = true;
   } else if (collapsibleToggleProduct === true) {
     arrowIconImageProduct.style.transform = "rotate(" + 0 + "deg)";
     collapsibleMenu.style.display = "none";
     collapsibleToggleProduct = false;
+    arrowIconImageCompany.style.display = "block";
+    arrowIconImageConnect.style.display = "block";
   }
 }
 
@@ -55,10 +61,12 @@ function collapsibleToggleChangeCompany() {
   if (collapsibleToggleCompany === false) {
     arrowIconImageCompany.style.transform = "rotate(" + 180 + "deg)";
     collapsibleMenuCompany.style.display = "flex";
+    arrowIconImageConnect.style.display = "none";
     collapsibleToggleCompany = true;
   } else if (collapsibleToggleCompany === true) {
     arrowIconImageCompany.style.transform = "rotate(" + 0 + "deg)";
     collapsibleMenuCompany.style.display = "none";
+    arrowIconImageConnect.style.display = "block";
     collapsibleToggleCompany = false;
   }
 }
@@ -67,10 +75,12 @@ function collapsibleToggleChangeConnect() {
   if (collapsibleToggleConnect === false) {
     arrowIconImageConnect.style.transform = "rotate(" + 180 + "deg)";
     collapsibleMenuConnect.style.display = "flex";
+    line.style.display = "none";
     collapsibleToggleConnect = true;
   } else if (collapsibleToggleConnect === true) {
     arrowIconImageConnect.style.transform = "rotate(" + 0 + "deg)";
     collapsibleMenuConnect.style.display = "none";
     collapsibleToggleConnect = false;
+    line.style.display = "block";
   }
 }

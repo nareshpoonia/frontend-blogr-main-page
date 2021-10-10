@@ -73,15 +73,19 @@ span {
   border: 1px var(--white) solid;
 }
 
-.btn-first {
+.btn-first a {
+  text-decoration: none;
   color: var(--light-red);
   font-weight: 500;
 }
 
 .btn-second {
-  color: var(--white);
   background: none;
   border: 1px var(--white) solid;
+}
+.btn-second a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 .top-section {
@@ -227,16 +231,10 @@ p {
   top: 6rem;
   background-color: var(--white);
   padding: 2rem 7.5rem;
-  height: 400px;
+  height: 500px;
   display: none;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 20px 30px rgba(0, 0, 0, 0.1);
 }
-
-/* .drop-down a {
-  text-decoration: none;
-  color: black;
-  padding: 6rem 0rem;
-} */
 
 .hamburger-icon {
   position: fixed;
@@ -244,9 +242,6 @@ p {
   right: 70px;
   display: block;
 }
-/* .arrow-icon {
-  display: inline;
-} */
 
 .collapsible-menu {
   position: fixed;
@@ -321,4 +316,39 @@ p {
 .menu-wrapper h4 {
   font-size: 1.2rem;
   padding: 1.5rem 0.5rem;
+}
+
+hr {
+  position: fixed;
+  top: 28rem;
+  left: 2.2rem;
+  width: 70%;
+  padding: 0rem 0rem;
+  margin: 0rem 0rem;
+}
+
+.login a {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  font-size: 1.2rem;
+  position: fixed;
+  top: 29rem;
+  left: 11rem;
+}
+
+.sign-up a {
+  text-decoration: none;
+  color: var(--white);
+}
+.sign-up {
+  position: fixed;
+  top: 31rem;
+  padding: 0.8rem 1.6rem;
+  margin: 1.5rem 0.4rem;
+  border-radius: 1.3rem;
+  font-family: "Ubuntu", sans-serif;
+  border: 1px var(--white) solid;
+  background-color: var(--light-red);
+  color: var(--white);
+  font-weight: 500;
 }
