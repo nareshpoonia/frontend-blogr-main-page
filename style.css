@@ -115,6 +115,10 @@ h2 {
   color: var(--very-dark-blue);
 }
 
+.desktop-nav {
+  display: none;
+}
+
 .logo {
   width: 20%;
 }
@@ -329,22 +333,7 @@ hr {
   margin: 0rem 0rem;
 }
 
-.login a {
-  text-decoration: none;
-  color: var(--very-dark-blue);
-  font-size: 1.2rem;
-  position: fixed;
-  top: 29rem;
-  left: 11rem;
-}
-
-.sign-up a {
-  text-decoration: none;
-  color: var(--white);
-}
-.sign-up {
-  position: fixed;
-  top: 31rem;
+.btn-sign-up {
   padding: 0.8rem 1.6rem;
   margin: 1.5rem 0.4rem;
   border-radius: 1.3rem;
@@ -353,6 +342,30 @@ hr {
   background-color: var(--light-red);
   color: var(--white);
   font-weight: 500;
+}
+
+.btn-login {
+  padding: 0.8rem 1.6rem;
+  margin: 1.5rem 0.4rem;
+  border-radius: 1.3rem;
+  font-family: "Ubuntu", sans-serif;
+  border: 1px var(--white) solid;
+  background-color: var(--light-red);
+  color: var(--white);
+  font-weight: 500;
+}
+.logo-desktop {
+  display: none;
+}
+
+.btn-menu-wrapper a {
+  text-decoration: none;
+  color: var(--white);
+}
+.btn-menu-wrapper {
+  color: var(--white);
+  font-weight: 500;
+  margin-top: 5rem;
 }
 
 @media screen and (min-width: 1440px) {
@@ -376,6 +389,11 @@ hr {
   .logo {
     width: 8%;
     margin-left: 10rem;
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
   }
   /* Changed */
   .nav {
@@ -652,37 +670,13 @@ hr {
   }
 
   hr {
-    position: fixed;
-    top: 28rem;
-    left: 2.2rem;
-    width: 70%;
-    padding: 0rem 0rem;
-    margin: 0rem 0rem;
+    display: none;
   }
 
-  .login a {
-    text-decoration: none;
-    color: var(--very-dark-blue);
-    font-size: 1.2rem;
-    position: fixed;
-    top: 29rem;
-    left: 11rem;
-  }
-
-  .sign-up a {
-    text-decoration: none;
+  .btn-menu-wrapper {
+    display: flex;
     color: var(--white);
-  }
-  .sign-up {
-    position: fixed;
-    top: 31rem;
-    padding: 0.8rem 1.6rem;
-    margin: 1.5rem 0.4rem;
-    border-radius: 1.3rem;
-    font-family: "Ubuntu", sans-serif;
-    border: 1px var(--white) solid;
-    background-color: var(--light-red);
-    color: var(--white);
-    font-weight: 500;
+    font-weight: 0;
+    margin-top: 0rem;
   }
 }
