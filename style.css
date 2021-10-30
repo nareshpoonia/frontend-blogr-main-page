@@ -385,6 +385,28 @@ hr {
   .hamburger-icon {
     display: none;
   }
+
+  .btn-login {
+    padding: 0.8rem 1.6rem;
+    margin: 1.5rem 0.4rem;
+    border-radius: 1.3rem;
+    font-family: "Ubuntu", sans-serif;
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  .btn-sign-up {
+    padding: 0.8rem 1.6rem;
+    margin: 1.5rem 0.4rem;
+    border-radius: 1.3rem;
+    font-family: "Ubuntu", sans-serif;
+    border: 1px var(--white) solid;
+    background-color: var(--white);
+    color: var(--light-red);
+    font-weight: 500;
+  }
   /* Changed */
   .logo {
     width: 8%;
@@ -448,30 +470,31 @@ hr {
   .line {
     display: none;
   }
-
+  /* changed */
   .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5.7rem;
-    font-size: 1rem;
+    margin-top: 9rem;
+    font-size: 1.2rem;
     line-height: 2.3rem;
     color: var(--white);
     padding: 0rem 0.7rem;
     text-align: center;
   }
-
+  /* Changed */
   span {
-    display: block;
+    display: inline;
   }
 
   .hero-text-second-heading {
     margin: 1rem 0rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.3rem;
     text-align: center;
     font-weight: 300;
+    color: var(--white);
   }
 
   .button-section {
