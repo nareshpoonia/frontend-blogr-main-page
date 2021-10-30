@@ -394,6 +394,8 @@ hr {
 
   .logo-desktop {
     display: block;
+    margin-right: 2rem;
+    margin-left: 10rem;
   }
   /* Changed */
   .nav {
@@ -406,7 +408,7 @@ hr {
   .drop-down {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     position: static;
     top: 0px;
     padding: 0rem 0rem;
@@ -418,6 +420,33 @@ hr {
     box-shadow: none;
     /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
       0px 20px 30px rgba(0, 0, 0, 0.1); */
+  }
+  /* Changed */
+  .btn-menu-wrapper {
+    margin-left: 35rem;
+    display: flex;
+    color: var(--white);
+    font-weight: 0;
+    margin-top: 0rem;
+  }
+  /* Changed */
+  .arrow-icon-image-product {
+    background-color: white;
+    display: none;
+  }
+  /* Changed */
+  .arrow-icon-image-company {
+    background-color: white;
+    display: none;
+  }
+  /* Changed */
+  .arrow-icon-image-connect {
+    background-color: white;
+    display: none;
+  }
+
+  .line {
+    display: none;
   }
 
   .hero-text {
@@ -594,7 +623,7 @@ hr {
     color: var(--greyish-blue);
     margin-bottom: 1rem;
   }
-
+  /* Changed */
   .collapsible-menu {
     position: fixed;
     top: 190px;
@@ -607,6 +636,7 @@ hr {
     justify-content: center;
     background-color: var(--greyish-blue);
     padding: 2rem 4rem;
+    display: none;
   }
   .collapsible-menu a {
     text-decoration: none;
@@ -671,12 +701,5 @@ hr {
 
   hr {
     display: none;
-  }
-
-  .btn-menu-wrapper {
-    display: flex;
-    color: var(--white);
-    font-weight: 0;
-    margin-top: 0rem;
   }
 }
