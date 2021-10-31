@@ -90,9 +90,14 @@ span {
   text-decoration: none;
 }
 
-.top-section {
+.top-section-heading {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.top-wrapper {
   display: flex;
-  margin-top: 11.2rem;
+  margin-top: 0.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -108,6 +113,10 @@ span {
 
 .illustration {
   margin-top: 2.8rem;
+}
+
+.illustration-desktop {
+  display: none;
 }
 
 h2 {
@@ -488,6 +497,15 @@ hr {
     display: inline;
   }
 
+  .top-wrapper {
+    display: flex;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--very-dark-blue);
+  }
+
   .hero-text-second-heading {
     margin: 1rem 0rem;
     font-size: 1rem;
@@ -523,25 +541,46 @@ hr {
     color: var(--white);
     text-decoration: none;
   }
-
-  .top-section {
-    display: flex;
-    margin-top: 11.2rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--very-dark-blue);
+  /* changed */
+  .top-image-section {
+    position: absolute;
+    left: 7%;
+    top: -50%;
+    width: 30%;
   }
 
-  .top-image-section {
+  .top-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+  }
+  /* changed */
+  .top-section {
+    position: relative;
+    overflow: hidden;
+    padding: 0rem 17rem 22rem 4rem;
+  }
+
+  .top-section-heading {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .top-text-section {
+    width: 50%;
+    text-align: left;
   }
 
   .illustration {
+    display: none;
     margin-top: 2.8rem;
+  }
+
+  .illustration-desktop {
+    display: block;
+    position: absolute;
+    top: 35rem;
+    left: 30rem;
   }
 
   h2 {
@@ -551,14 +590,16 @@ hr {
 
   h3 {
     margin-top: 2rem;
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
     line-height: 1.8rem;
     margin-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 
   p {
-    text-align: center;
+    text-align: left;
+    padding-bottom: 5rem;
   }
 
   .middle-section {
