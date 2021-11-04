@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/nareshpoonia/frontend-blogr-main-page)
-- Live Site URL: [Add live site URL here](https://naresh-frontendmentor-blogr.netlify.app/)
+- Solution URL: [Solution URL here](https://github.com/nareshpoonia/frontend-blogr-main-page)
+- Live Site URL: [Live site URL here](https://naresh-frontendmentor-blogr.netlify.app/)
 
 ## My process
 
