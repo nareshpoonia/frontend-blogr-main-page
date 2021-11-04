@@ -111,10 +111,6 @@ span {
   align-items: center;
 }
 
-.illustration {
-  margin-top: 2.8rem;
-}
-
 .illustration-desktop {
   display: none;
 }
@@ -181,6 +177,14 @@ p {
 }
 
 .illustration {
+  display: flex;
+  margin-top: 0rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.illustration-laptop-mobile {
   display: flex;
   margin-top: 15rem;
   flex-direction: column;
@@ -394,8 +398,10 @@ hr {
     padding: 3rem 1rem;
   }
 
-  /* Changed */
   .hamburger-icon {
+    display: none;
+  }
+  .illustration-laptop-mobile {
     display: none;
   }
 
@@ -420,7 +426,7 @@ hr {
     color: var(--light-red);
     font-weight: 500;
   }
-  /* Changed */
+
   .logo {
     width: 8%;
     margin-left: 10rem;
@@ -432,14 +438,13 @@ hr {
     margin-right: 2rem;
     margin-left: 10rem;
   }
-  /* Changed */
+
   .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  /* Changed */
   .drop-down {
     display: flex;
     flex-direction: row;
@@ -453,10 +458,8 @@ hr {
     align-items: flex-start;
     height: 0px;
     box-shadow: none;
-    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
-      0px 20px 30px rgba(0, 0, 0, 0.1); */
   }
-  /* Changed */
+
   .btn-menu-wrapper {
     margin-left: 35rem;
     display: flex;
@@ -464,17 +467,16 @@ hr {
     font-weight: 0;
     margin-top: 0rem;
   }
-  /* Changed */
   .arrow-icon-image-product {
     background-color: white;
     display: none;
   }
-  /* Changed */
+
   .arrow-icon-image-company {
     background-color: white;
     display: none;
   }
-  /* Changed */
+
   .arrow-icon-image-connect {
     background-color: white;
     display: none;
@@ -483,7 +485,7 @@ hr {
   .line {
     display: none;
   }
-  /* changed */
+
   .hero-text {
     display: flex;
     flex-direction: column;
@@ -496,7 +498,7 @@ hr {
     padding: 0rem 0.7rem;
     text-align: center;
   }
-  /* Changed */
+
   span {
     display: inline;
   }
@@ -545,7 +547,7 @@ hr {
     color: var(--white);
     text-decoration: none;
   }
-  /* changed */
+
   .top-image-section {
     position: absolute;
     left: 7%;
@@ -557,7 +559,7 @@ hr {
     display: flex;
     align-items: flex-start;
   }
-  /* changed */
+
   .top-section {
     position: relative;
     overflow: hidden;
@@ -629,7 +631,7 @@ hr {
   }
 
   .blank {
-    height: 4rem;
+    height: 0rem;
   }
   .middle {
     display: flex;
@@ -639,7 +641,6 @@ hr {
     height: 40rem;
   }
 
-  /* Changed */
   .phone-image {
     z-index: 1;
     top: 98rem;
@@ -675,7 +676,7 @@ hr {
     align-items: center;
     color: var(--very-dark-blue);
   }
-  /* Changed */
+
   .bottom-section .content-wrapper {
     margin-left: 48rem;
     margin-top: 12rem;
@@ -689,11 +690,9 @@ hr {
 
   .footer img {
     margin-top: 0rem;
-    margin-bottom: 3rem;
   }
-  /* Changed */
+
   .footer {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -703,91 +702,31 @@ hr {
     padding-top: 5rem;
   }
 
-  .footer-content h4 {
-    margin-top: 0rem;
-  }
-
-  .footer-content a {
-    text-decoration: none;
-    color: var(--greyish-blue);
-    margin-bottom: 1rem;
-  }
-  /* Changed */
   .collapsible-menu {
-    position: fixed;
-    top: 120px;
-    right: 1050px;
+    top: 115px;
+    right: 1040px;
     height: 200px;
     width: 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: var(--white);
-    padding: 2rem 4rem;
-    display: none;
-  }
-  .collapsible-menu a {
-    text-decoration: none;
-    color: black;
-    padding: 0.5rem 0rem;
+    padding: 2rem 2rem;
   }
 
   .collapsible-menu-company {
-    position: fixed;
     top: 100px;
-    right: 970px;
-    height: 160px;
+    right: 945px;
     width: 0.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: var(--white);
-    margin: 1rem 0rem;
-    padding: 0.5rem 3rem;
-    display: none;
-  }
-
-  .collapsible-menu-company a {
-    text-decoration: none;
-    color: black;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 2.5rem;
   }
 
   .collapsible-menu-connect {
-    position: fixed;
     top: 100px;
-    right: 855px;
-    height: 160px;
+    right: 830px;
     width: 7%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: var(--white);
-    margin: 1rem 0rem;
-    padding: 0rem 2rem;
-    display: none;
+    padding: 0rem 0rem;
   }
 
-  .collapsible-menu-connect a {
-    text-decoration: none;
-    color: black;
-    padding: 0.5rem 0rem;
-  }
-
-  .menu-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu-wrapper h4 {
-    font-size: 1.2rem;
-    padding: 1.5rem 0.5rem;
-  }
-  /* Changed */
   hr {
     display: none;
   }
